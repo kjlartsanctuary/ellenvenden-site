@@ -49,7 +49,7 @@
     }
 
     .content {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 2rem auto;
       padding: 0 1.5rem;
     }
@@ -60,3 +60,195 @@
       margin-bottom: 2rem;
       font-size: 2rem;
     }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .gallery figure {
+      position: relative;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery figure:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery img {
+      width: 100%;
+      display: block;
+    }
+
+    figcaption {
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 1rem 1rem 1rem;
+      gap: 0.5rem;
+    }
+
+    .options select {
+      padding: 0.35rem 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      padding: 0.5rem 1.2rem;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      flex-grow: 1;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #555;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media(max-width: 500px){
+      .options {
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Ellen Veden</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="reproductions.html">Reproductions</a></li>
+        <li><a href="bio.html">Biography</a></li>
+        <li><a href="social.html">Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h2>Reproductions for Sale</h2>
+
+    <div class="gallery">
+      <!-- Artwork 1 -->
+      <figure>
+        <img src="assets/images/reproduction1.jpg" alt="Reproduction 1">
+        <figcaption>A vibrant exploration of color and texture, reflecting Ellen’s mastery of acrylics.</figcaption>
+        <div class="options">
+          <select id="size1">
+            <option value="11x14">11x14</option>
+            <option value="16x20">16x20</option>
+          </select>
+          <select id="medium1">
+            <option value="paper">Paper</option>
+            <option value="canvas">Canvas</option>
+          </select>
+          <a href="#" class="btn" id="btn1" target="_blank">Add to Cart</a>
+        </div>
+      </figure>
+
+      <!-- Artwork 2 -->
+      <figure>
+        <img src="assets/images/reproduction2.jpg" alt="Reproduction 2">
+        <figcaption>Delicate interplay between form and line, highlighting the subtle emotional resonance of watercolor.</figcaption>
+        <div class="options">
+          <select id="size2">
+            <option value="11x14">11x14</option>
+            <option value="16x20">16x20</option>
+          </select>
+          <select id="medium2">
+            <option value="paper">Paper</option>
+            <option value="canvas">Canvas</option>
+          </select>
+          <a href="#" class="btn" id="btn2" target="_blank">Add to Cart</a>
+        </div>
+      </figure>
+
+      <!-- Artwork 3 -->
+      <figure>
+        <img src="assets/images/reproduction3.jpg" alt="Reproduction 3">
+        <figcaption>Bold and expressive acrylic on canvas, inspired by Ellen’s decades of artistic experience.</figcaption>
+        <div class="options">
+          <select id="size3">
+            <option value="11x14">11x14</option>
+            <option value="16x20">16x20</option>
+          </select>
+          <select id="medium3">
+            <option value="paper">Paper</option>
+            <option value="canvas">Canvas</option>
+          </select>
+          <a href="#" class="btn" id="btn3" target="_blank">Add to Cart</a>
+        </div>
+      </figure>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ellen Veden. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Square links for each artwork-size-medium combination
+    const squareLinks = {
+      "1_11x14_paper": "YOUR_SQUARE_LINK_1_11x14_PAPER",
+      "1_11x14_canvas": "YOUR_SQUARE_LINK_1_11x14_CANVAS",
+      "1_16x20_paper": "YOUR_SQUARE_LINK_1_16x20_PAPER",
+      "1_16x20_canvas": "YOUR_SQUARE_LINK_1_16x20_CANVAS",
+
+      "2_11x14_paper": "YOUR_SQUARE_LINK_2_11x14_PAPER",
+      "2_11x14_canvas": "YOUR_SQUARE_LINK_2_11x14_CANVAS",
+      "2_16x20_paper": "YOUR_SQUARE_LINK_2_16x20_PAPER",
+      "2_16x20_canvas": "YOUR_SQUARE_LINK_2_16x20_CANVAS",
+
+      "3_11x14_paper": "YOUR_SQUARE_LINK_3_11x14_PAPER",
+      "3_11x14_canvas": "YOUR_SQUARE_LINK_3_11x14_CANVAS",
+      "3_16x20_paper": "YOUR_SQUARE_LINK_3_16x20_PAPER",
+      "3_16x20_canvas": "YOUR_SQUARE_LINK_3_16x20_CANVAS"
+    };
+
+    function updateButton(artworkNumber){
+      const size = document.getElementById("size"+artworkNumber).value;
+      const medium = document.getElementById("medium"+artworkNumber).value;
+      const key = artworkNumber + "_" + size + "_" + medium;
+      const link = squareLinks[key];
+      document.getElementById("btn"+artworkNumber).href = link;
+    }
+
+    [1,2,3].forEach(num => {
+      document.getElementById("size"+num).addEventListener("change", () => updateButton(num));
+      document.getElementById("medium"+num).addEventListener("change", () => updateButton(num));
+      updateButton(num); // Initialize on load
+    });
+  </script>
+</body>
+</html>
