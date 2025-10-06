@@ -1,98 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ellen Veden | Biography</title>
-  <link rel="stylesheet" href="css/style.css">
   <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1rem 2rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    nav h1 {
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .content {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-
-    .bio-image {
-      display: block;
-      margin: 2rem auto;
-      max-width: 300px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #222;
-      text-align: center;
-    }
-
-    p {
-      margin-bottom: 1rem;
-      color: #444;
-      text-align: justify;
-    }
-
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #222; color: #fff; padding: 1rem 2rem; }
+    nav { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: auto; }
+    nav h1 { font-size: 1.6rem; letter-spacing: 1px; }
+    nav ul { list-style: none; display: flex; gap: 1rem; }
+    nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav ul li a:hover { text-decoration: underline; }
+    .content { max-width: 950px; margin: 2rem auto; padding: 0 1.5rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .bio-image { display: block; margin: 2rem auto; max-width: 280px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+    h2 { font-size: 2rem; margin-bottom: 1rem; color: #222; text-align: center; }
+    h3 { color: #8b3e2f; margin-top: 1.5rem; }
+    p { margin-bottom: 1rem; text-align: justify; }
+    ul { margin-left: 1.2rem; margin-bottom: 1rem; }
+    footer { background: #222; color: #fff; text-align: center; padding: 1rem; margin-top: 3rem; }
+    .highlight { color: #8b3e2f; font-weight: bold; }
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header>
     <nav>
       <h1>Ellen Veden</h1>
@@ -106,23 +37,29 @@
     </nav>
   </header>
 
-  <!-- Bio Content -->
   <div class="content">
-    <!-- Profile Image -->
-    <img src="assets/images/ellenvedenpic.jpg" alt="Ellen Veden Portrait" class="bio-image">
-
+    <img src="assets/images/ellenvedenpic.jpg" alt="Ellen Veden Portrait" class="bio-image" />
     <h2>About Ellen Veden</h2>
 
-    <p>Ellen has been a lifelong Princeton, NJ resident. After she received a BFA in Fine Arts and an MA in Anthropology, she entered the New York art world when New York was beginning to replace Paris as the center. She lived in a studio loft on Grand Street in SoHo and participated in many juried shows with solo exhibitions at the Fimbres Gallery. Her friends were the Post-World War II generation of artists — abstract expressionists like Robert Rauschenberg, Nancy Spiro, and photographers like Robert Frank. Included in the exhibition at the Center for Modern Aging Gallery is a portrait of Veden by the painter and print artist June Leaf, Frank’s wife. In NYC, Veden taught art at 104, the renowned High School of Music and Art, and the LaGuardia High School of Music and Art, and the Performing Arts.</p>
+    <p><strong>Princeton, NJ</strong> — A world traveler for both work and pleasure, Ellen Veden is known for her love of life, curiosity, and creative energy. Her multimedia landscapes use light, texture, and color to reveal the spirit of Princeton and its surrounding landscapes. Her exhibition, <span class="highlight">“Princeton Unveiled: Landscapes in Texture and Color”</span>, opened at the Center for Modern Aging on September 25, 2025 (coverage by Linda Sipprelle, Town Topics).</p>
 
-    <p>Veden also had friends in the burgeoning Post-World War II television industry. One of those friends, who was a producer at NBC, saw a program Veden produced with her students on Manhattan Cable Television and offered her a job in television broadcasting. After working at NBC and PBS, where the main sponsor was AT&T, Veden was asked to join AT&T to manage its New York City office for Skynet Satellite Services. During that time, she was also a member of the New York City Arts and Business Council and one of the early volunteers at the Hole in the Wall Gang Camps, founded by actor and philanthropist Paul Newman to provide a summer camp experience for seriously ill children. Interested in living abroad, Veden left AT&T to join France Telecom first, and later Teleglobe Canada and Belgacom, to assist those companies in pursuing the United States broadcast satellite network business. Always intellectually curious, Veden was led by those experiences to join Bellcore and Motorola to learn the product end of cellular and digital technology.</p>
+    <p>Veden received a <strong>BFA in Fine Arts</strong> from Wesleyan University, studied at the <strong>Art Institute of Chicago</strong>, and earned an <strong>MA in Anthropology and International Studies</strong> from The New School. A native New Yorker, she lived in a studio loft on Grand Street in SoHo and participated in numerous juried exhibitions with solo shows at the Fimbres Gallery. Her circle of friends included artists and photographers from the post–World War II generation—abstract expressionists like Robert Rauschenberg, Nancy Spero, and photographers like Robert Frank. Included in her recent exhibition at the Center for Modern Aging is a portrait of Veden by painter and print artist June Leaf, Frank’s wife.</p>
 
-    <p>When Veden retired and relocated to Princeton she renewed her youthful involvement in painting and drawing, using the surrounding area as her inspiration. She is a member of a group of artists called the Creative Collective, and her work has been shown in over 50 venues in the area, including the juried Ellarslie, City of Trenton Museum shows. She now serves on the board of the Princeton Adult School. For many years until its demise, she was a member of the board of the Princeton Friends of Opera. She has also served on the board at Trenton Museum at Ellarslie.</p>
+    <p>In New York City, Veden taught <strong>art and video production</strong> at the renowned <strong>High School of Music and Art (104)</strong> and the <strong>LaGuardia High School of Music and Art and the Performing Arts</strong>. One of her former students, author Jennifer Coburn, warmly credited Veden as an inspiring influence during a lecture at the Princeton Public Library in May 2025.</p>
+
+    <p>Veden also had friends in the burgeoning post–World War II television industry. A producer at NBC discovered one of her student programs on Manhattan Cable Television and offered her a position in television broadcasting. She later worked with <strong>NBC</strong> and <strong>PBS</strong> (where AT&T was a major sponsor), before being recruited by <strong>AT&T</strong> to manage its New York City office for <strong>Skynet Satellite Services</strong>. During this time, she was an active member of the <strong>New York City Arts and Business Council</strong> and volunteered for <strong>The Hole in the Wall Gang Camps</strong>, founded by actor and philanthropist <strong>Paul Newman</strong> to provide summer experiences for seriously ill children.</p>
+
+    <p>Her career evolved internationally, joining <strong>France Telecom</strong>, <strong>Teleglobe Canada</strong>, and <strong>Belgacom</strong> to develop U.S. broadcast satellite networks. Later, she joined <strong>Bellcore</strong> and <strong>Motorola</strong> to expand her expertise in cellular and digital technologies—an extension of her lifelong intellectual curiosity.</p>
+
+    <p>After retiring and relocating to <strong>Princeton</strong> in 2000, Veden reignited her passion for painting and drawing. A naturalist painter, her philosophy aligns with that of French artist <strong>Jean-Baptiste-Camille Corot</strong>, who said, “You must interpret nature with entire simplicity and according to your personal sentiment.” Her works reflect that belief—layered, atmospheric studies of color and light.</p>
+
+    <p>Veden is a proud member of the <strong>Creative Collective</strong>, a group fostering artistic community and collaboration. Her works have been displayed in over 50 venues, including the juried <strong>Ellarslie City Museum of Trenton</strong> exhibitions. She serves on the <strong>Board of the Princeton Adult School</strong> and has previously served on the boards of the <strong>Princeton Friends of Opera</strong> and the <strong>Trenton Museum Society at Ellarslie</strong>.</p>
+
+    <p>Her exhibitions are often community-centered, with proceeds supporting local arts and wellness organizations. Her show <span class="highlight">“Princeton Unveiled: Landscapes in Texture and Color”</span> runs through October 10, 2025, at the Center for Modern Aging, where half of the print sales benefit the center’s programs.</p>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ellen Veden. All rights reserved.</p>
+    <p>&copy; 2025 Ellen Veden. All rights reserved. | Content compiled from exhibition coverage by Linda Sipprelle (Town Topics).</p>
   </footer>
 </body>
 </html>
