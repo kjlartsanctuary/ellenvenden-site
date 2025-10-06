@@ -130,13 +130,6 @@
         <figcaption>Juried exhibition at Ellarslie, Trenton Museum</figcaption>
       </figure>
 
-      <!-- Add more figures as needed -->
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Ellen Veden. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+      <figure>
+        <img src="assets/images/exhibition4.jpg" alt="Exhibition 4">
+        <
