@@ -12,15 +12,6 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    .exhibition-section {
-      margin-bottom: 2.5rem;
-    }
-    .exhibition-section h2 {
-      font-size: 1.8rem;
-      color: #2c3e50;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
     .exhibition {
       background: #f8f8f8;
       padding: 1.5rem;
@@ -36,9 +27,18 @@
     .exhibition p {
       margin: 0.5rem 0;
     }
+    @media (max-width: 768px) {
+      .exhibition h3 {
+        font-size: 1.1rem;
+      }
+      .exhibition p {
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <nav>
       <h1>Ellen Veden</h1>
@@ -53,62 +53,59 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <h2>Exhibitions</h2>
     <p>
       Ellen’s exhibitions showcase her evolving body of work across different mediums, 
-      from painting and drawing to collaborative projects. Check back here for updates 
-      on upcoming shows and past exhibitions.
+      from painting and drawing to collaborative projects. Check back here for updates.
     </p>
   </section>
 
+  <!-- Exhibition Listings -->
   <main>
-    <!-- Upcoming Exhibitions -->
-    <div class="exhibition-section">
-      <h2>Upcoming Exhibitions</h2>
-
-      <div class="exhibition">
-        <h3>“Colors of Renewal” – Spring 2025</h3>
-        <p><strong>Location:</strong> Princeton Arts Council Gallery, Princeton, NJ</p>
-        <p><strong>Dates:</strong> April 5 – May 30, 2025</p>
-        <p>
-          A collection of Ellen’s recent works exploring themes of growth, change, and nature’s renewal.
-        </p>
-      </div>
-
-      <div class="exhibition">
-        <h3>“Horizons” – Summer 2025</h3>
-        <p><strong>Location:</strong> Chashama Gallery, New York, NY</p>
-        <p><strong>Dates:</strong> July 10 – August 15, 2025</p>
-        <p>
-          Large-scale paintings featuring abstract landscapes and architectural motifs.
-        </p>
-      </div>
+    <div class="exhibition">
+      <h3>“Colors of Renewal” – Spring 2025</h3>
+      <p><strong>Location:</strong> Princeton Arts Council Gallery, Princeton, NJ</p>
+      <p><strong>Dates:</strong> April 5 – May 30, 2025</p>
+      <p>
+        A collection of Ellen’s recent works exploring themes of growth, change, and nature’s renewal.
+      </p>
     </div>
 
-    <!-- Past Exhibitions -->
-    <div class="exhibition-section">
-      <h2>Past Exhibitions</h2>
+    <div class="exhibition">
+      <h3>“Horizons” – Summer 2025</h3>
+      <p><strong>Location:</strong> Chashama Gallery, New York, NY</p>
+      <p><strong>Dates:</strong> July 10 – August 15, 2025</p>
+      <p>
+        Large-scale paintings featuring abstract landscapes and architectural motifs.
+      </p>
+    </div>
 
-      <div class="exhibition">
-        <h3>“Reflections” – Fall 2024</h3>
-        <p><strong>Location:</strong> Capital Health Healing Arts Gallery, Trenton, NJ</p>
-        <p><strong>Dates:</strong> September – December 2024</p>
-        <p>
-          Showcasing mixed media works highlighting light, shadow, and emotional depth.
-        </p>
-      </div>
+    <div class="exhibition">
+      <h3>“Reflections” – Fall 2024</h3>
+      <p><strong>Location:</strong> Capital Health Healing Arts Gallery, Trenton, NJ</p>
+      <p><strong>Dates:</strong> September – December 2024</p>
+      <p>
+        Showcasing mixed media works highlighting light, shadow, and emotional depth.
+      </p>
+    </div>
 
-      <div class="exhibition">
-        <h3>“SoHo to Princeton: A Journey in Art” – 2023</h3>
-        <p><strong>Location:</strong> Hamilton Township Library, Hamilton, NJ</p>
-        <p>
-          A retrospective of Ellen’s journey from New York’s SoHo art scene to her current body of work.
-        </p>
-      </div>
+    <div class="exhibition">
+      <h3>“SoHo to Princeton: A Journey in Art” – 2023</h3>
+      <p><strong>Location:</strong> Hamilton Township Library, Hamilton, NJ</p>
+      <p>
+        A retrospective of Ellen’s journey from New York’s SoHo art scene to her current body of work.
+      </p>
     </div>
   </main>
 
+  <!-- Back Home Button -->
+  <div class="back-home">
+    <a href="index.html" class="btn-home">← Back to Home</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Ellen Veden. All rights reserved.</p>
   </footer>
