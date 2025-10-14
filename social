@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ellen Veden | Social Media</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>Ellen Veden</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exhibitions.html">Exhibitions</a></li>
+        <li><a href="reproductions.html">Reproductions</a></li>
+        <li><a href="bio.html">Biography</a></li>
+        <li><a href="social.html">Social Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="content">
+    <h2>Social Media</h2>
+    <p>
+      Ellen Veden’s social media connections will be available here soon.  
+      This page will feature her latest news, upcoming events, behind-the-scenes glimpses of her studio,  
+      and ways to stay connected with her creative journey.  
+    </p>
+    <p><em>Stay tuned — exciting updates are on the way!</em></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ellen Veden. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
