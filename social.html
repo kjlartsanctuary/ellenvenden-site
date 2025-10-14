@@ -4,74 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ellen Veden | Social Media</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #000000;
-      line-height: 1.6;
-      text-align: center;
-      padding: 0;
-      margin: 0;
-    }
-
-    header {
-      background: #000;
-      color: #fff;
-      padding: 1rem 2rem;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    nav h1 {
-      font-size: 1.8rem;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
+    /* Page-specific styles */
     .content {
       max-width: 800px;
       margin: 4rem auto;
       padding: 0 1rem;
+      text-align: center;
     }
 
-    h2 {
-      font-size: 2.5rem;
+    .content h2 {
+      font-size: 2.2rem;
       margin-bottom: 1.5rem;
     }
 
-    p {
-      font-size: 1.2rem;
+    .content p {
+      font-size: 1.1rem;
       color: #333;
+      margin-bottom: 1rem;
     }
 
-    footer {
+    .back-home {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .btn-home {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
       background: #000;
       color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .btn-home:hover {
+      background: #444;
+    }
+
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+      nav h1 {
+        margin-bottom: 0.5rem;
+      }
+      .content h2 {
+        font-size: 1.6rem;
+      }
+      .content p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -86,6 +78,7 @@
         <li><a href="reproductions.html">Reproductions</a></li>
         <li><a href="bio.html">Biography</a></li>
         <li><a href="social.html">Social Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -100,29 +93,11 @@
     </p>
     <p><em>Stay tuned — exciting updates are on the way!</em></p>
   </div>
-<div class="back-home">
-  <a href="index.html" class="btn-home">← Back to Home</a>
-</div>
 
-<style>
-  .back-home {
-    text-align: center;
-    margin: 2rem 0;
-  }
-  .btn-home {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: #000;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.3s ease;
-  }
-  .btn-home:hover {
-    background: #444;
-  }
-</style>
+  <!-- Back Home Button -->
+  <div class="back-home">
+    <a href="index.html" class="btn-home">← Back to Home</a>
+  </div>
 
   <!-- Footer -->
   <footer>
@@ -130,4 +105,3 @@
   </footer>
 </body>
 </html>
-
